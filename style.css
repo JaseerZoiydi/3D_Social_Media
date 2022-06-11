@@ -146,14 +146,8 @@ ul li span{
 ul li:hover span{
     opacity: 1;
 }
-@media (max-width:1000px) {
-    ul{
-        left: 0px;
-    }
-    
-}
 
-@media (max-width:700) {
+@media (max-width:1000) {
     header{
         font-size: 1em;
     }
