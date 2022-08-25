@@ -17,23 +17,12 @@ div{
 }
 a{
     text-decoration: none;
-    color:#222;
+    color:rgb(27, 117, 226);
 }
 header{
     font-size: 1.5em;
     margin: 0px;
     text-align: center;
-}
-h2{
-    color: #444;
-}
-
-
-.title{
-
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: #396af1;
 }
 
 
@@ -45,7 +34,6 @@ section{
 
 ul{
 
-    left: 100px;
     position: relative;
     transform: skewY(-15deg);
     margin-top: 30px;
@@ -58,7 +46,7 @@ ul li {
     background:var(--clr);
     padding: 15px;
     transition: 0.5s;
-    z-index: calc(1 * var(--i));
+    z-index: var(--i);
 }
 
 ul li:hover{
@@ -160,12 +148,45 @@ ul li:hover span{
         padding: 80px 0px;
         min-height: 100vh;
     }
-    ul{
-        right: 10px;
-    }
     
 }
 
+@media (max-width:700px) {
+    header{
+        font-size: 1em;
+    }
+    section{
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+    body{
+        padding: 80px 0px;
+        min-height: 100vh;
+    }
+    ul{
+        left: 50px;
+    }
+    
+}
+@media (max-width:300) {
+    header{
+        font-size: 1em;
+    }
+    section{
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+    body{
+        padding: 80px 0px;
+        min-height: 100vh;
+    }
+    ul{
+        margin-right:70px;
+    }
+    
+}
 @media (max-width:700px) {
     header{
         font-size: 1em;
